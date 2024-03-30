@@ -7,22 +7,6 @@
 > python -m venv nbaanalytics
 > .\nbaanalytics\Scripts\activate
 
-```
-pip install jupyter
-
-pip install pandas
-pip install numpy
-
-pip install matplotlib
-pip install bubbly  # 气泡图
-pip install seaborn
-
-pip install scikit-learn # 用于机器学习模型、交叉验证、预处理、流水线和度量。
-pip install scipy # 用于统计测试和转换
-```
-
-> [bubbly](https://github.com/AashitaK/bubbly/pull/4/commits/6fb8dfe2ead180d644c96920b87e100951bca44b)>Fixed AttributeError：'DataFrame' object has no attribute 'append'
-
 ### streamlit
 
 - **快速使用 python 构建 web 应用**
@@ -48,27 +32,34 @@ pip install ydata_profiling
 
 #### 核心数据操作和可视化：
 
-numpy：提供高效的数值计算和数组操作来处理 NBA 数据。
-pandas：创建和操作 DataFrame，从而轻松进行数据探索和清理。
-matplotlib.pyplot：生成信息可视化，例如绘图和图表，以可视化数据中的趋势和关系。
-seaborn：增强视觉清晰度和美观性，基于 matplotlib 构建具有视觉吸引力的统计图形。
-机器学习：
+- numpy：提供高效的数值计算和数组操作来处理 NBA 数据。
 
-sklearn.model_selection：提供用于将数据拆分为训练集和测试集、实施交叉验证以及评估模型性能的工具。
-sklearn.linear_model：包含各种线性回归模型，包括 LinearRegression、Lasso 和 Ridge，用于构建预测模型。
-评估和诊断：
+- pandas：创建和操作 DataFrame，从而轻松进行数据探索和清理。
 
-sklearn.metrics：提供一套评估模型性能的指标，例如均方误差、R 平方等。
-scipy.stats.mstats：包含统计测试，包括正态测试，用于检查数据分布的正态性，这是线性回归的关键假设。
-scipy.stats：提供额外的统计工具，例如用于转换非正态数据以更好地适应线性回归假设的 boxcox 函数。
-数据预处理：
+- matplotlib.pyplot：生成信息可视化，例如绘图和图表，以可视化数据中的趋势和关系。
 
-sklearn.preprocessing：包括数据缩放和转换技术，例如 StandardScaler，它将特征标准化为均值 0 和标准差 1，通常可以增强模型性能。
-PolynomialFeatures：生成多项式特征，允许探索变量之间的非线性关系。
-模型构建和细化：
+- seaborn：增强视觉清晰度和美观性，基于 matplotlib 构建具有视觉吸引力的统计图形。
+  机器学习：
 
-sklearn.pipeline：通过创建一系列步骤（包括预处理和模型拟合）来简化建模过程，从而使模型开发更加高效。
-sklearn.model_selection.GridSearchCV：自动调整超参数，搜索最佳模型配置以提高模型性能。
-3D 可视化：
+- bubbly ：绘制气泡图
 
-mpl_toolkits.mplot3d：支持创建 3D 绘图，对于以更直观和身临其境的方式可视化多个变量之间的关系特别有用。
+  >  [bubbly](https://github.com/AashitaK/bubbly/pull/4/commits/6fb8dfe2ead180d644c96920b87e100951bca44b)>Fixed AttributeError：'DataFrame' object has no attribute 'append'
+
+- sklearn.model_selection：提供用于将数据拆分为训练集和测试集、实施交叉验证以及评估模型性能的工具。
+  sklearn.linear_model：包含各种线性回归模型，包括 LinearRegression、Lasso 和 Ridge，用于构建预测模型。
+  评估和诊断：
+
+- sklearn.metrics：提供一套评估模型性能的指标，例如均方误差、R 平方等。
+  scipy.stats.mstats：包含统计测试，包括正态测试，用于检查数据分布的正态性，这是线性回归的关键假设。
+  scipy.stats：提供额外的统计工具，例如用于转换非正态数据以更好地适应线性回归假设的 boxcox 函数。
+  数据预处理：
+
+- sklearn.preprocessing：包括数据缩放和转换技术，例如 StandardScaler，它将特征标准化为均值 0 和标准差 1，通常可以增强模型性能。
+  PolynomialFeatures：生成多项式特征，允许探索变量之间的非线性关系。
+  模型构建和细化：
+
+- sklearn.pipeline：通过创建一系列步骤（包括预处理和模型拟合）来简化建模过程，从而使模型开发更加高效。
+  sklearn.model_selection.GridSearchCV：自动调整超参数，搜索最佳模型配置以提高模型性能。
+  3D 可视化：
+
+- mpl_toolkits.mplot3d：支持创建 3D 绘图，对于以更直观和身临其境的方式可视化多个变量之间的关系特别有用。
